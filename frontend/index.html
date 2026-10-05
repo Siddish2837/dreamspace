@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DreamSpace | Premium Workspace Inspiration & Planner</title>
+    <meta name="description" content="Discover inspiring desk setups crafted for students, developers, creators, and productivity enthusiasts. Plan your dream workspace with DreamSpace.">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- OPENING SCREEN -->
+    <section id="opening">
+        <div class="opening-content">
+            <h1><b>DREAMSPACE</b></h1>
+            <p>Every Great Idea Begins With A Great Workspace</p>
+        </div>
+    </section>
+
+    <!-- HEADER -->
+    <header>
+        <nav>
+            <h2 class="logo">DreamSpace</h2>
+
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#gallery">Workspaces</a></li>
+                <li><a href="#workspace-details">Details</a></li>
+                <li><a href="#dream-builder">Dream Builder</a></li>
+                <li><a href="#accessories">Accessories</a></li>
+                <li><a href="#feedback">Reviews</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO SECTION -->
+        <section id="hero">
+            <div class="hero-left">
+                <h1>Design The Workspace You'll Love To Work In</h1>
+                <p>
+                    Discover inspiring desk setups crafted for students, developers, creators, and productivity enthusiasts.
+                </p>
+
+                <div class="hero-cta-group">
+                    <a href="#gallery">
+                        <button id="explore-btn">Explore Setups</button>
+                    </a>
+                    <a href="#dream-builder">
+                        <button id="learn-btn">Build Your Dream Desk</button>
+                    </a>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <img src="images/hero.png" alt="Hero Workspace">
+            </div>
+        </section>
+
+        <!-- GALLERY SECTION -->
+        <section id="gallery">
+            <h2>Explore Workspaces</h2>
+            <p class="section-subtitle">Curated environments tailored for every style of focus</p>
+
+            <div class="gallery-container" id="gallery-container">
+                <!-- Dynamically rendered or static fallback -->
+                <article class="workspace-card" data-key="student">
+                    <img src="images/student.png" alt="Student Workspace">
+                    <div class="workspace-label">Student Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+
+                <article class="workspace-card" data-key="developer">
+                    <img src="images/developer.png" alt="Developer Workspace">
+                    <div class="workspace-label">Developer Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+
+                <article class="workspace-card" data-key="gamer">
+                    <img src="images/gamer.png" alt="Gamer Workspace">
+                    <div class="workspace-label">Gamer Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+
+                <article class="workspace-card" data-key="creator">
+                    <img src="images/creator.png" alt="Creator Workspace">
+                    <div class="workspace-label">Creator Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+
+                <article class="workspace-card" data-key="minimal">
+                    <img src="images/minimal.png" alt="Minimal Workspace">
+                    <div class="workspace-label">Minimal Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+
+                <article class="workspace-card" data-key="productivity">
+                    <img src="images/productivity.png" alt="Productivity Workspace">
+                    <div class="workspace-label">Productivity Workspace</div>
+                    <button type="button">Explore</button>
+                </article>
+            </div>
+        </section>
+
+        <!-- WORKSPACE DETAILS SECTION -->
+        <section id="workspace-details">
+            <h2>Workspace Details</h2>
+
+            <article class="details-container">
+                <div class="details-image">
+                    <img id="detail-image" src="images/student.png" alt="Selected Workspace">
+                </div>
+
+                <div class="details-content">
+                    <h3 id="detail-title">Student Workspace</h3>
+                    <p id="detail-description">
+                        A calm and inspiring study setup designed for focus, learning and productivity.
+                    </p>
+
+                    <h4>Key Features</h4>
+                    <ul id="detail-features">
+                        <li>✔ Organized desk layout</li>
+                        <li>✔ Comfortable lighting</li>
+                        <li>✔ Minimal distractions</li>
+                        <li>✔ Productivity focused</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+
+        <!-- DREAM BUILDER SECTION -->
+        <section id="dream-builder">
+            <h2>Design Your Dream Workspace</h2>
+            <p class="section-subtitle">Configure your vibe, choose your accessories, and share your dream setup with the world.</p>
+
+            <form id="dream-builder-form">
+                <div class="dream-selects-container">
+                    <select id="dream-theme" required>
+                        <option value="" disabled selected>Select Setup Theme</option>
+                        <option value="Minimalist Zen">Minimalist Zen</option>
+                        <option value="Developer Command Center">Developer Command Center</option>
+                        <option value="RGB Gamer Battlestation">RGB Gamer Battlestation</option>
+                        <option value="Creative Studio & Editing">Creative Studio & Editing</option>
+                        <option value="Cozy Nordic Wooden">Cozy Nordic Wooden</option>
+                        <option value="Executive High-Productivity">Executive High-Productivity</option>
+                    </select>
+
+                    <select id="dream-lighting" required>
+                        <option value="" disabled selected>Select Ambient Lighting</option>
+                        <option value="Warm Amber (2700K Glow)">Warm Amber (2700K Glow)</option>
+                        <option value="Crisp Daylight (5000K Focus)">Crisp Daylight (5000K Focus)</option>
+                        <option value="RGB Chroma Backlight">RGB Chroma Backlight</option>
+                        <option value="Natural Sunlight Flow">Natural Sunlight Flow</option>
+                        <option value="Dimmable OLED Screenbar">Dimmable OLED Screenbar</option>
+                    </select>
+
+                    <select id="dream-desk" required>
+                        <option value="" disabled selected>Select Desk Format</option>
+                        <option value="Compact (40-48 inches)">Compact (40-48 inches)</option>
+                        <option value="Standard Solid Wood (55-60 inches)">Standard Solid Wood (55-60 inches)</option>
+                        <option value="Executive Extra-Wide (72+ inches)">Executive Extra-Wide (72+ inches)</option>
+                        <option value="L-Shaped Corner Station">L-Shaped Corner Station</option>
+                        <option value="Motorized Standing Desk">Motorized Standing Desk</option>
+                    </select>
+                </div>
+
+                <textarea id="dream-text" placeholder="Detail your dream workspace (e.g. Dual 4K OLED screens, walnut desk mat, custom mechanical keyboard, plants, studio monitors...)" required></textarea>
+
+                <div>
+                    <button type="submit" id="dream-submit-btn">Build My Setup</button>
+                </div>
+            </form>
+
+            <div id="dream-output"></div>
+
+            <!-- Community Dream Gallery -->
+            <div class="community-dreams-wrapper">
+                <h3>Community Dream Workspaces</h3>
+                <div id="community-dreams-grid" class="community-dreams-grid">
+                    <!-- Populated dynamically from GET /dream-builders -->
+                </div>
+            </div>
+        </section>
+
+        <!-- ACCESSORIES SECTION -->
+        <section id="accessories">
+            <h2>Workspace Essentials</h2>
+            <p class="section-subtitle">Precision gear to elevate your ergonomics and aesthetic</p>
+
+            <div class="accessories-container">
+                <article class="accessory-card">
+                    <img src="images/keyboard.png" alt="Mechanical Keyboard">
+                    <h3>Mechanical Keyboard</h3>
+                </article>
+
+                <article class="accessory-card">
+                    <img src="images/lamp.png" alt="Desk Lamp">
+                    <h3>Desk Lamp</h3>
+                </article>
+
+                <article class="accessory-card">
+                    <img src="images/chair.png" alt="Ergonomic Chair">
+                    <h3>Ergonomic Chair</h3>
+                </article>
+
+                <article class="accessory-card">
+                    <img src="images/headphones.png" alt="Headphones">
+                    <h3>Headphones</h3>
+                </article>
+            </div>
+        </section>
+
+        <!-- COMMUNITY FEEDBACK SECTION -->
+        <section id="feedback">
+            <h2>Community Feedback & Reviews</h2>
+            <p class="section-subtitle">What desk enthusiasts and creators say about DreamSpace setups</p>
+
+            <div class="feedback-layout">
+                <!-- Feedback Submission Form -->
+                <div class="feedback-form-card">
+                    <h3>Share Your Thoughts</h3>
+                    <p class="form-desc">Leave a review or feedback on our workspace concepts.</p>
+
+                    <form id="feedback-form">
+                        <div class="form-field">
+                            <label for="feedback-name">Your Name</label>
+                            <input type="text" id="feedback-name" placeholder="e.g. Sarah Connor" required>
+                        </div>
+
+                        <div class="form-field">
+                            <label>Your Rating</label>
+                            <div class="star-rating" id="star-rating-box" role="radiogroup" aria-label="Rating">
+                                <span class="star active" data-rating="1">★</span>
+                                <span class="star active" data-rating="2">★</span>
+                                <span class="star active" data-rating="3">★</span>
+                                <span class="star active" data-rating="4">★</span>
+                                <span class="star active" data-rating="5">★</span>
+                            </div>
+                            <input type="hidden" id="feedback-rating-val" value="5">
+                        </div>
+
+                        <div class="form-field">
+                            <label for="feedback-msg">Your Feedback</label>
+                            <textarea id="feedback-msg" rows="4" placeholder="What do you think about DreamSpace?" required></textarea>
+                        </div>
+
+                        <button type="submit" id="feedback-submit-btn">Post Feedback</button>
+                        <div id="feedback-status" class="feedback-status-msg"></div>
+                    </form>
+                </div>
+
+                <!-- Feedback Display Grid -->
+                <div class="feedback-display-container">
+                    <div class="feedback-header-row">
+                        <h3>Recent Community Reviews</h3>
+                        <span id="feedback-count" class="feedback-count-badge">0 Reviews</span>
+                    </div>
+
+                    <div id="feedback-list" class="feedback-list">
+                        <!-- Populated dynamically from GET /feedback -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-left">
+            <h2><b>DreamSpace</b></h2>
+            <p>Every Great Idea Begins With A Great Workspace.</p>
+            <p class="footer-sub">&copy; 2026 DreamSpace Labs. All rights reserved.</p>
+        </div>
+
+        <div class="footer-right">
+            <img src="images/footerplant.png" alt="Plant Illustration">
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
